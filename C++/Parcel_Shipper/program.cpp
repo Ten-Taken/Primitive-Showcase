@@ -1,5 +1,5 @@
 /*
-Assignment 7 - Postal Packages
+Postal Packages
 Programmer: Gregory Wolfe
 
 Main file, begin execution here.
@@ -86,7 +86,7 @@ int main(){
 	
 	//Print package totals, exit program
 	cout <<"Number of accepted packages:"<<accepted;
-	cout<<"\nNumber of rejected packages:"<<rejected;
+	cout<<"\nNumber of rejected packages:"<<rejected<<endl<<endl;
 
 	return 0;
 }

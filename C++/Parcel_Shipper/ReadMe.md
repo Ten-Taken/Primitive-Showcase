@@ -4,7 +4,8 @@ About
 This program simulates package shipping. The user inputs weight 
 and dimensions. The package is either accepted or rejected, and 
 an appropriate cost is returned. The cost is determined via 
-a searching algorithm inside the included package class.
+a searching algorithm inside the included package class. Once
+the user terminates with a sentinel, a summary report is given.
 
 
 Project Specifications

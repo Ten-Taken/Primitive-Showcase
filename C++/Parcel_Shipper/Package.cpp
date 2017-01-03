@@ -1,5 +1,5 @@
 /*
-Assignment 7 - Package class
+Package class
 Programmer: Gregory Wolfe
 
 This is the class implementation file for a class I'm using with Prog7
