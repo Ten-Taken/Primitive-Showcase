@@ -1,0 +1,1 @@
+mcs -out:program.exe *.cs -r:System.Data.dll -r:System.Drawing.dll -r:System.Windows.Forms.dll
