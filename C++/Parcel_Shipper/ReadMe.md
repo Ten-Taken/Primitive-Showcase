@@ -1,7 +1,7 @@
 About
 ----------------
 
-This program simulates package shipping. The user inputs weight 
+This program simulates package shipping in a console. The user inputs weight 
 and dimensions. The package is either accepted or rejected, and 
 an appropriate cost is returned. The cost is determined via 
 a searching algorithm inside the included package class. Once
@@ -9,13 +9,12 @@ the user terminates with a sentinel, a summary report is given.
 
 
 Project Specifications
-**********************
-**********************
+----------------------
 
 
 Lone Star Package Service ships packages within the state of Texas. Packages are accepted for shipping subject to the following restrictions:
 
-Shipping requirements
+**Shipping requirements**
 
     The package weight must not exceed 50 pounds.
     The package must not exceed 3 feet in length, width, or height.
@@ -32,7 +31,7 @@ They should not have to enter:
 
 Enter package weight and 3 dimensions: -1 0 0 0
 
-Input Validation
+**Input Validation**
 
 Check to be sure that the user enters positive numbers for the package weight and dimensions (weight and dimensions must be larger than zero). For transactions with invalid weight or dimensions, print an error message and skip the transaction.
 
@@ -42,85 +41,37 @@ Note: Do not use a two-dimensional array to store the weights and costs. The wei
 
 You can initialize the array elements in the array declarations using the values from the table below.
 
-Weight
-	
+Weight | Shipping Charge
+------ | ---------------
+1 | 1.50
 
-Shipping Charge
+2 | 2.10
 
-1
-	
+3 | 4.00
 
-1.50
+5 | 6.75
 
-2
-	
+7 | 9.90
 
-2.10
+10 | 14.95
 
-3
-	
+13 | 19.40
 
-4.00
+16 | 24.20
 
-5
-	
+20 | 27.30
 
-6.75
+25 | 31.90
 
-7
-	
+30 | 38.50
 
-9.90
+35 | 43.50
 
-10
-	
+40 | 44.80
 
-14.95
+45 | 47.40
 
-13
-	
-
-19.40
-
-16
-	
-
-24.20
-
-20
-	
-
-27.30
-
-25
-	
-
-31.90
-
-30
-	
-
-38.50
-
-35
-	
-
-43.50
-
-40
-	
-
-44.80
-
-45
-	
-
-47.40
-
-50
-	
-
-55.20
+50 | 55.20
 
 To determine the shipping charge, search the weight array for the package weight and then use the corresponding element from the shipping charge array. For example, the shipping charge for a 3 pound package would be $4.00. If the package weight falls between the weights in the weight table, use the larger weight. For example, the shipping charge for a 4 pound package would be 6.75. Do not hard code these values into your program code. For example, you should NOT have code like:
 
@@ -131,7 +82,7 @@ If you need a hint, check here:
 
 programming assignment 7 hint
 
-Output
+**Output**
 
 Note that you should be able to write this program with only two loops, a transaction processing loop and a cost search loop. You do not need an input validation loop. If the package input is invalid, just print an error message and skip the normal package processing.
 
@@ -141,7 +92,7 @@ Your program output should look similar to the example below.
 
 Note: Do not store the package information in an array or vector. If you process a lot of packages, you will eventually run out of space in the array. If you use a vector, as you process more transactions you will eat up more and more memory. This program should be designed to run for long periods of time without running out of memory.
 
-For each transaction, print:
+**For each transaction, print:**
 
     the transaction number (start counting with 1)
     whether the package was accepted or rejected
@@ -230,7 +181,7 @@ Number of rejected packages: 4
 
  
 
-Additional Requirements:
+**Additional Requirements:**
 
     Do not use global variables in any assignment. A global variable is a variable that is declared outside any function. It is okay to use global constants.
     You must use multiple functions in this program. Do not write the program as one large main function.
