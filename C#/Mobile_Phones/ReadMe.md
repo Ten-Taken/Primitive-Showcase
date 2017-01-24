@@ -9,8 +9,10 @@ I have stripped down the project to a single directory.
 
 Testing
 -----------
-	*Windows users can use the .bat file to compile and test.
-	*Linux and OSX users can run the .sh to compile and test. 
+	*Windows users can use the .bat file to compile a program.exe to test.
+	*Linux and OSX users can run the .sh to compile a program.exe to test.
+
+	For working with the .NET framework in Linux, I'm using the [Mono Platform](http://www.mono-project.com/) , this is also what the .sh script uses.
 
 	If the file is not executable, you may need to add permissions first. 
 

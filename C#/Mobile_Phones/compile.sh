@@ -1,0 +1,1 @@
+mcs -out:program.exe *.cs
