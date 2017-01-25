@@ -22,8 +22,15 @@ While you can recompile the bytecode if you wish, there are class files present.
 Without a command-line argument, the program will default to querying http://stackoverflow.com .  To test a different site, simply supply the URL at run-time
 
 Example:
-	*java CrawlDriver http://someSite.com
-	
+	*java CrawlDriver http://someSite.com*
+
 
 Program Specifications
 ---------------------
+Write a program that uses the driver class definition provided that will:
+
+	* Connect to an arbitrary website identified as a command-line parameter
+	* Download the default file from the website
+	* Display the first ten lines of downloaded text on the command line screen
+	* Number each line of text as it is displayed
+	* Display your name where indicated
