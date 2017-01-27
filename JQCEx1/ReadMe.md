@@ -30,7 +30,7 @@ default etc.
 
 5. Create a button with a click event that uses jQuery and CSS to identify with
 a #90F border the descendants of the `` <section> `` that are `` <div> `` elements.
-ITSE 1394 – jQuery Program 9. When clicked, the button should toggle the borders from default (lightgrey)
+When clicked, the button should toggle the borders from default (lightgrey)
 to #90F to default etc.
 
 6. Create a button with a click event that uses jQuery and CSS to identify with
