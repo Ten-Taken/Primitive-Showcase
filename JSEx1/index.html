@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- Gregory Wolfe -->
+<html>
+<head>
+	<title>Program-02</title>
+	<link href="css/program-02.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+<h1>Welcome to Program-2!</h1>
+<a href="../">Return to Program Index</a>
+<br><br>
+
+<!--Requirement 1 -->
+<div class="reqBox">
+	<p>Requirement #1</p>
+
+	<br><br>
+	<button id="morphButton" onclick="pushIt()">Push</button>
+	<audio id="salt" src="assets/Salt-N-Pepa_-_Push_It.mp3"></audio>
+
+	<br><br><br><br>
+	<div id="aud" hidden>
+	<button onclick="stopMus()">Pause Audio</button>
+	<br><br><br><br>
+
+	<p><em>Song (midi version), 'Push It' by <a href="https://en.wikipedia.org/wiki/Salt-N-Pepa">Salt N' Pepa.</a> Licensed for play under <a href="https://en.wikipedia.org/wiki/Fair_use">Fair Use</a> and the <a href="https://en.wikipedia.org/wiki/TEACH_Act">TEACH Act</a></em></p>
+	</div>
+</div>
+
+
+<!--Requirement 2 -->
+<div class="reqBox">
+	<p>Requirement #2</p>
+	<br><br>
+
+	<h2 class="centric" id="today"></h2>
+</div>
+
+<!--Requirements 3 - 6 -->
+<div id="storyBox">
+	<p>Requirements #3 - #6</p>
+		<div id="bldPlane">
+	<p>Ever wanted to pilot your own aircraft? Now you can. First we need to build it:</p>
+	
+			Type: <select name="craftType" id="crType">
+				<option value="commercial">Commercial</option>
+				<option value="military">Military</option>
+			          </select>  
+	&nbsp; Manufacturer: <select name="craftMake" id="crMke">
+				<option value="Boeing">Boeing</option>
+				<option value="Eclipse">Eclipse</option>
+				<option value="Cessna">Cessna</option>
+				</select>
+			<br><br>
+			Capacity: <input type="number" step="1" min="1" size="4" id="crCap"> &nbsp;
+			Range: <input type="range" name="craftRange" min="0" max="8000" step="1000" id="mySlide" oninput="upSlide(value)">
+			<output for="mySlide" id="distance">4000</output>&nbsp; miles
+			<br><br>
+			
+			<button onclick="createCraft()">Build</button> &nbsp;
+		<samp id="planeDone" hidden><h3>Build Complete</h3>
+			&nbsp; <button onclick="retrieveCraft()">Deploy Plane</button>
+		</samp>
+			</div>
+		
+		<div id="poofPlane"><!-- Plane Display Div -->
+			<samp>Taxiing to runway...</samp><br><br>
+			<table>
+				<tr>
+					<th class="spec">Type</th>
+					<th class="spec">Manufacturer</th>
+					<th class="spec">Capacity</th>
+					<th class="spec">Range</th>
+				</tr>
+				<tr>
+					<td class="spec" id="typRslt"></td>
+					<td class="spec" id="manRslt"></td>
+					<td class="spec" id="capRslt"></td>
+					<td class="spec" id="RngRslt"></td>
+				</tr>
+
+		<tr>
+	<td class="spec"><button onclick="userPlane.takeOff()">Take Off</button></td>
+	<td class="spec"><button onclick="userPlane.climb()">Climb</button></td>
+	<td class="spec"><button onclick="userPlane.descend()">Descend</button></td>
+	<td class="spec"><button onclick="userPlane.land(finMessage)">Land</button></td>
+		</tr>
+
+				<tr>
+					<!--Flameout id used for method return -->
+					<td colspan="4">Status: &nbsp;&nbsp;<samp id="flameOut"></samp></td>
+				</tr>
+				<tr>
+					<td colspan="4" id="redAlt"></td>
+				</tr>
+			</table>
+			<img id="pht" src="assets/abandonedPlane.png" alt="photo of plane">
+			<!-- Image 'abandonedPlane.png'
+				Creative Commons 2.0 Attribution License
+				Credit Brett Levin
+
+				https://www.flickr.com/photos/scubabrett22/6044203012/in/photolist-ad77YL-9ZSm8S-4E3D6S-fMS1f5-fQpBzr-57t2bW-a6t854-6W7Amw-8tcDfv-bmXQb1-2hPezo-FqQoV-84f1Tk-9ZPt6v-7WEzs8-9ZSkTN-9ZPuEZ-9n8jDW-9ZQ6mZ-6W3y3x-9ZSjWG-9ZPuDB-9DJwXe-9ZSjnb-fwLHZi-9ZSkY3-9ZSk77-9ZPtAc-2eZynS-6hxGE5-6W7Bsm-p5WV71-6W7B7U-9ZPtw6-4upeWD-8BdJrH-9ZQ6JM-97euqa-oWVar-9ZPsVM-9ZSk8w-9ZPtnk-9ZSkHS-g9VEHJ-9ZPtxr-9ZSkG9-8WMLtF-4wBxR8-9ZSjLU-9ZSnKL
+			-->
+		</div>
+
+		<div style="clear: both;"></div>
+</div>
+
+<br>
+
+<!--Requirement 7 -->
+<div class="reqBox">
+	<p>Requirement #7</p>
+	<br><br>
+	The more times you write 'purple', the more this next button will impress you.<br>
+	<br>
+	<input type="text" size="50" value="Write a sentence." id="Req7In" class="italiEntry"><br><br><br><br>
+	
+	<button type="button" onclick="Req7()">Yellow my sentence.</button><br><br>
+	<p><samp id="Req7Orgn"></samp></p>
+	<p><samp id="Req7Out"></samp></p>
+
+
+</div>
+
+<!--Requirement 8 -->
+<div class="reqBox">
+	<p>Requirement #8</p>
+	<br><br>
+	Enter any number. This button will round it to two decimals.<br><br>
+<input type="number" id="numba">&nbsp;<button onclick="roundIt()">Round</button>
+<br><br>
+<samp id="moMoney"></samp>
+</div>
+
+
+<!--Requirement 9 -->
+<div class="reqBox">
+	<p>Requirement #9</p>
+	<br><br>
+	Enter a number in each box. <br><br>
+	<input type="number" id="numA">&nbsp;
+	<input type="number" id="numB">
+	<br><br>
+	<button onclick="performModulus()">Modulate</button>
+	<br><br>
+	<samp id="modOut"></samp>
+</div>
+
+<!--Requirement 10 -->
+<div class="reqBox">
+	<p>Requirement #10</p>
+	<br><br>
+	Enter some words in each box.<br><br>
+	<input type="text" id="phew1"><br><br>
+	<input type="text" id="phew2">&nbsp;
+	<button onclick="stringConcat()">Combine</button><br><br>
+
+	<samp id="bigPhew"></samp>
+</div>
+
+
+<!--Requirement 11 -->
+<div class="reqBox">
+	<p>Requirement #11</p>
+	<br><br>
+	<button onclick="randomRun()">Random Number</button>
+	<br><br>
+	<samp id="Req11"></samp>
+</div>
+
+
+<!--Requirement 12 -->
+<div class="reqBox">
+	<p>Requirement #12</p>
+	<br><br>
+	Find out what day of the week it will be on 01/20/2020.<br><br>
+	<button onclick="setMyDate()">Tell me!</button>
+
+	<p>It will be a <samp id="secretDay"></samp></p>
+</div>
+
+<!--Requirement 13 -->
+<div class="reqBox">
+	<p>Requirement #13</p>
+	<br><br>
+	Enter a sentence in each box. <br><br>
+	<input type="text" id="req13strA"> &nbsp;
+	<input type="text" id="req13strB">
+	<br><br><button onclick="compareStrings()">Compare Strings</button>
+	<br><br>
+
+	<samp id="stringJury"></samp>
+
+</div>
+
+
+<!--Requirement 14 -->
+<div class="reqBox">
+	<p>Requirement #14</p>
+	<br><br>
+	The smallest # in javascript is: &nbsp;
+	<samp id="minimus"></samp><br><br>
+	The largest # in javascript is: &nbsp;
+	<samp id="maximus"></samp>
+
+</div>
+
+<!-- Import scripting -->
+<script type="text/javascript" src="scripts/program-02.js"></script>
+
+</body>
+</html>
