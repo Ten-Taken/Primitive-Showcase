@@ -78,11 +78,15 @@ nav table{
     display: inline-block;
     text-align: left;
     
-    padding-left: 100px;
+    
     color: #fff;
-    width: 70%;
+    width: 75%;
     
   }
+
+.projLink{
+  color: #26DDE0 !important;
+}
 
   #mainBox{
     width: 90%;
