@@ -7,10 +7,9 @@ to reference the stored location.
 
 
 Project Specifications
-**********************
-**********************
+-------------------------------
 
-Input Data
+**Input Data**
 
 For each student, the following data will be input:
 
@@ -19,9 +18,7 @@ For each student, the following data will be input:
 
 Use a struct to hold the name and score for one student. The name should be storedin a C++ string object.
 
-Validation
-
-Processing
+**Validation Processing**
 
 Your program should work for any number of students. When the program starts, it should ask the user for the number of students to be processed. Then it should dynamically allocate an array of that size (array of student/score structures).
 
@@ -33,17 +30,17 @@ The program should then:
     Call a function that displays a neat table of student name/score pairs in sorted order. Include appropriate column heading for your table. Following the table, display the average score with appropriate label.
     Note:In at least one of your functions, you must declare the array parameter using pointer notation instead of array notation, and inside the function you must use pointer notation instead of array notation to access the array elements. If you do not understand this requirement, email me. 
 
-Sample Output
+**Sample Output**
 
-Name                  Score
----------------------------
-Jim Smith                75
-Victor Montero           81
-Christa Kim              88
----------------------------
-Average                  81.3
+Name    ||   Score
 
-Requirements/Hints:
+Jim Smith   || 75
+Victor Montero      ||     81
+Christa Kim           ||   88
+
+Average          ||        81.3
+
+**Requirements/Hints:**
 
     Global variables are variables that are declared outside any function. Do not use global variables in your programs. Declare all your variables inside functions
     Use the C++ string class to hold the student name.
