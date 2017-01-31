@@ -45,6 +45,10 @@ nav table{
   display: inline-block;
 }
 
+#nvCont{
+  min-width: 1200px;
+}
+
 #thebox {
   background-image: url("wolficon.png");
   width: 300px;
