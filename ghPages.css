@@ -40,6 +40,11 @@ nav table{
 
 }
 
+.LI-profile-badge{
+  vertical-align: top;
+  display: inline-block;
+}
+
 #thebox {
   background-image: url("wolficon.png");
   width: 300px;
