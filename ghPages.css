@@ -13,6 +13,21 @@ a {
   color: #4A82E8;
 }
 
+#myName{
+  vertical-align: top;
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#topDate{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: center;
+  padding-top: 0;
+  margin-top: 0;
+}
+
 h2 {
   color: #fced9a;	
   font-size: 1.5em;
@@ -29,15 +44,20 @@ nav{
 nav a{
   color: #29F314;
   font-size: 1.3em;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 td{
   text-align: center;
   padding-left: 15px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 nav table{
-
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .LI-profile-badge{
@@ -50,14 +70,14 @@ nav table{
 }
 
 #thebox {
-  background-image: url("wolficon.png");
-  width: 300px;
-  height: 200px;
+  background-image: url("SmileFace.jpg");
+  width: 80%;
+  height: 80%;
   margin:0em;
   display: inline-block;
   background-repeat: no-repeat;
   vertical-align: top;
-
+  border-radius: 25px;
 
   }
 
