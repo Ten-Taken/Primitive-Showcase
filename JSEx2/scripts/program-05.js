@@ -110,9 +110,9 @@ function pauseClock(){
 
 //Req 11
 function slowImages(){
-document.getElementsByTagName('img')[0].src = "/assets/noelled2.jpg";
-document.getElementsByTagName('img')[1].src = "/assets/noelled3.jpg";
-document.getElementsByTagName('img')[2].src = "/assets/noelled5.jpg";
+document.getElementsByTagName('img')[0].src = "/JSEx2/assets/noelled2.jpg";
+document.getElementsByTagName('img')[1].src = "/JSEx2/assets/noelled3.jpg";
+document.getElementsByTagName('img')[2].src = "/JSEx2/assets/noelled5.jpg";
 }
 
 
